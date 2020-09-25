@@ -5,6 +5,6 @@
 ## vimrc
 using Plug for plugins, requires fzf
 
-##vscode
+## vscode
 vscode config path default: `~/.config/Code/User/` 
 requires vscode vim plugin
