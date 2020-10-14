@@ -21,9 +21,9 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     // Toggle between terminal and editor focus
-{ "key": "ctrl+oem_4", "command": "workbench.action.terminal.focus"},
+{ "key": "ctrl+q", "command": "workbench.action.terminal.focus"},
 {
-    "key": "ctrl+oem_4",
+    "key": "ctrl+q",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
 },
@@ -100,5 +100,35 @@
     "key": "down",
     "command": "-showNextParameterHint",
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+},
+{
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
+},
+//binds for file explorer
+{
+    "key": "d",
+    "command": "fileutils.duplicateFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+},
+{
+    "key": "r",
+    "command": "fileutils.moveFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+},
+{
+    "key": "n",
+    "command": "fileutils.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+},
+{
+    "key": "a",
+    "command": "fileutils.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+},
+{
+    "key": "shift+n",
+    "command": "fileutils.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
 }
 ]

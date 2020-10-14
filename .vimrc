@@ -173,7 +173,7 @@ set updatetime=50
 set colorcolumn=80
 nnoremap <SPACE> <Nop>
 map <C-e> :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
-
+:imap jj <Esc>
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 let mapleader = " "
 
@@ -196,8 +196,12 @@ call plug#end()
 "fuzzy search
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_OPTS='--reverse'
+nnoremap <silent> <C-p> :Files<CR>
 set background=dark
 " transparent
 hi Normal guibg=NONE ctermbg=NONE
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE " transparent bg
 
+#run python code
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
