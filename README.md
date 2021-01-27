@@ -1,6 +1,15 @@
 # dotfiles
 
-.vimrc for vim configuration and vscode configuration for the vscodevim plugin with similar keybindings
+##KDE
+
+##terminal
+
+### install zsh
+sudo pacman -S zsh
+### install kitty
+pacman -S kitty
+### install ranger
+pacman -S ranger
 
 ## vimrc
 using Plug for plugins, requires fzf
