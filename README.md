@@ -1,8 +1,8 @@
 # dotfiles
 
-##KDE
+## KDE
 
-##terminal
+## terminal
 
 ### install zsh
 
