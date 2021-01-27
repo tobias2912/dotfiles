@@ -5,10 +5,13 @@
 ##terminal
 
 ### install zsh
+
 sudo pacman -S zsh
 ### install kitty
+
 pacman -S kitty
 ### install ranger
+
 pacman -S ranger
 
 ## vimrc
