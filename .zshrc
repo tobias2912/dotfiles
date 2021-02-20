@@ -75,6 +75,7 @@ plugins=(
     git
     zsh-autosuggestions
     autojump
+    zsh-syntax-highlighting
     )
 
 source $ZSH/oh-my-zsh.sh
@@ -102,13 +103,32 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshc="vim ~/.zshrc"
+alias ohmyzshc="vim ~/.oh-my-zsh"
+alias kittyc="vim ~/.config/kitty/kitty.conf"
+alias vimc="vim ~/.vimrc"
+alias rac="vim ~/.config/ranger/rc.conf"
 alias py="python3"
 alias l="ls"
 alias ..="cd .."
 alias ...="cd ../.."
-
+alias ra=ranger
+#make ranger exit to current dir when exiting with Q
+function ranger {
+    local IFS=$'\t\n'
+    local tempfile="$(mktemp -t tmp.XXXXXX)"
+    local ranger_cmd=(
+        command
+        ranger
+        --cmd="map q chain shell echo %d > "$tempfile"; quitall"
+    )
+    
+    ${ranger_cmd[@]} "$@"
+    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]]; then
+        cd -- "$(cat "$tempfile")" || return
+    fi
+    command rm -f -- "$tempfile" 2>/dev/null
+}
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -132,3 +152,5 @@ fe() {
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
 }
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim

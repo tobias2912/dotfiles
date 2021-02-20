@@ -1,4 +1,5 @@
 {
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
     "editor.minimap.enabled": false,
     "files.autoSave": "afterDelay",
     "workbench.iconTheme": "vscode-icons",
