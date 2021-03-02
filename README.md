@@ -1,4 +1,4 @@
-# dotfiles and setup for KDE ++
+# dotfiles and setup for Manjaro/KDE ++
 
 ## KDE
 
@@ -6,7 +6,7 @@
 ### install programs
 
 ```
-sudo pacman -Syu zsh kitty ranger latte-dock code vim spotifyd discord binutils
+sudo pacman -Syu zsh kitty ranger latte-dock code vim discord binutils
 ```
 
 ### remove titlebar
@@ -17,7 +17,7 @@ sudo pacman -Syu zsh kitty ranger latte-dock code vim spotifyd discord binutils
 
 ### add border to selected window
 
-add frame and inactiveFrame to [WM] in ~/.config/kdeglobals
+add frame and inactiveFrame to [WM] in ```~/.config/kdeglobals```
 
 ### kvantum themes 
 
@@ -29,7 +29,7 @@ https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-### plugins 
+### zsh plugins 
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -41,7 +41,7 @@ git clone git://github.com/wting/autojump.git
 cd autojump
 ./install.py
 
-### set default
+### set default shell
 
 chsh -s $(which zsh)
 
@@ -51,7 +51,7 @@ Kitty themes:
 
 https://github.com/dexpota/kitty-themes
 
-clone into ~/.config/kitty/
+```cd ~/.config/kitty/ && git clone https://github.com/dexpota/kitty-themes ```
 
 launch ranger and kitty to create directories
 
@@ -59,13 +59,18 @@ launch ranger and kitty to create directories
 
 install from kde scripts
 
+### run after install:
+
+```
 mkdir -p ~/.local/share/kservices5/
 ln -s ~/.local/share/kwin/scripts/krohnkite/metadata.desktop ~/.local/share/kservices5/krohnkite.desktop
-
+```
 
 ## vscode
 
 requires vscode vim plugin
+
+install a font to use with integrated terminal
 
 
 git clone https://github.com/tobias2912/dotfiles
