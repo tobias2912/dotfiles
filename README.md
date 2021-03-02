@@ -70,8 +70,16 @@ ln -s ~/.local/share/kwin/scripts/krohnkite/metadata.desktop ~/.local/share/kser
 
 requires vscode vim plugin
 
-install a font to use with integrated terminal
+## fonts
+ fonts used in configs is FiraCode Nerd Font Mono and regular
 
+ ```pamac build nerd-fonts-fira-code```
 
+# clone configs
+
+clone this repo and use script to move configs to default config locations
+
+```
 git clone https://github.com/tobias2912/dotfiles
 cd dotfiles && chmod +x insertconfigs.sh && ./insertconfigs.sh
+```
