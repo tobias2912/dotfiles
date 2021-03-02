@@ -1,4 +1,6 @@
-# dotfiles and setup for Manjaro/KDE ++
+# setup for Manjaro/KDE
+
+![screenshot](screen)
 
 ## KDE
 
