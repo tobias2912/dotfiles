@@ -2,19 +2,16 @@
 
 ## KDE
 
-### kvantum themes
 
-https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md
-
-### latte-dock (dev)
+### install programs
 
 ```
-sudo pacman -S latte-dock
+sudo pacman -Syu zsh kitty ranger latte-dock code vim spotifyd discord binutils
 ```
 
 ### remove titlebar
 
-- window rules -> new rule
+- window decoration -> window rules -> new rule
 - match on regex .*
 - appearance -> no titlebar
 
@@ -22,19 +19,33 @@ sudo pacman -S latte-dock
 
 add frame and inactiveFrame to [WM] in ~/.config/kdeglobals
 
+### kvantum themes 
+
+https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md
+
 ## terminal
 
 ### zsh
 
-```
-sudo pacman -S zsh
-```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+### plugins 
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+#### autojump
+
+git clone git://github.com/wting/autojump.git
+cd autojump
+./install.py
+
+### set default
+
+chsh -s $(which zsh)
 
 ### kitty
-
-```
-pacman -S kitty
-```
 
 Kitty themes:
 
@@ -42,19 +53,20 @@ https://github.com/dexpota/kitty-themes
 
 clone into ~/.config/kitty/
 
-### ranger
+launch ranger and kitty to create directories
 
-```
-pacman -S ranger
-```
+## krohnkite tiling script
 
-## vimrc
-using Plug for plugins, requires fzf
+install from kde scripts
 
-vim-plug:
+mkdir -p ~/.local/share/kservices5/
+ln -s ~/.local/share/kwin/scripts/krohnkite/metadata.desktop ~/.local/share/kservices5/krohnkite.desktop
 
-https://github.com/junegunn/vim-plug
 
 ## vscode
-vscode config path default: `~/.config/Code/User/` 
+
 requires vscode vim plugin
+
+
+git clone https://github.com/tobias2912/dotfiles
+cd dotfiles && chmod +x insertconfigs.sh && ./insertconfigs.sh
