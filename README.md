@@ -77,6 +77,9 @@ requires vscode vim plugin
 
  ```pamac build nerd-fonts-fira-code```
 
+follow https://github.com/alexanderjeurissen/ranger_devicons for ranger icons
+
+
 # clone configs
 
 clone this repo and use script to move configs to default config locations
