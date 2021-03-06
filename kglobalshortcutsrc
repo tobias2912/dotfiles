@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-115d5595-655a-40cf-ab83-8ce02bfc1dfc=none,none,Switch to activity "Default"
 switch-to-activity-2b8d120b-1983-4aea-a3df-5291e39de676=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -24,7 +25,8 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{ae255ccc-6c9d-46ae-86f4-6b5d555ff5dd}=Meta+T,none,Launch Konsole
+{269a1885-ac4c-45b6-8753-477e6d12cbe5}=none,none,Launch Konsole
+{5e596a84-8fad-4690-bb14-8c3adbbe0834}=Meta+T,none,Run Konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=,none,Search
 
 [kmix]
@@ -163,10 +165,10 @@ Window Minimize=Meta+Down\tMeta+N,Meta+PgDown,Minimize Window
 Window Move=none,none,Move Window
 Window No Border=none,none,Hide Window Border
 Window On All Desktops=none,none,Keep Window on All Desktops
-Window One Desktop Down=none,none,Window One Desktop Down
-Window One Desktop Up=none,none,Window One Desktop Up
-Window One Desktop to the Left=Meta+Ctrl+Left,none,Window One Desktop to the Left
-Window One Desktop to the Right=Meta+Ctrl+Right,none,Window One Desktop to the Right
+Window One Desktop Down=none,Meta+Ctrl+Shift+Down,Window One Desktop Down
+Window One Desktop Up=none,Meta+Ctrl+Shift+Up,Window One Desktop Up
+Window One Desktop to the Left=Meta+Ctrl+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left
+Window One Desktop to the Right=Meta+Ctrl+Right,Meta+Ctrl+Shift+Right,Window One Desktop to the Right
 Window Operations Menu=Alt+F3,Alt+F3,Window Operations Menu
 Window Pack Down=none,none,Pack Window Down
 Window Pack Left=none,none,Pack Window to the Left
@@ -206,9 +208,9 @@ Window to Desktop 7=none,none,Window to Desktop 7
 Window to Desktop 8=none,none,Window to Desktop 8
 Window to Desktop 9=none,none,Window to Desktop 9
 Window to Next Desktop=none,none,Window to Next Desktop
-Window to Next Screen=Meta+O,none,Window to Next Screen
+Window to Next Screen=Meta+O,Meta+Shift+Right,Window to Next Screen
 Window to Previous Desktop=none,none,Window to Previous Desktop
-Window to Previous Screen=none,none,Window to Previous Screen
+Window to Previous Screen=none,Meta+Shift+Left,Window to Previous Screen
 Window to Screen 0=none,none,Window to Screen 0
 Window to Screen 1=none,none,Window to Screen 1
 Window to Screen 2=none,none,Window to Screen 2
@@ -243,7 +245,6 @@ activate entry 6=,Meta+6,Activate Entry 6
 activate entry 7=,Meta+7,Activate Entry 7
 activate entry 8=,Meta+8,Activate Entry 8
 activate entry 9=,Meta+9,Activate Entry 9
-activate widget 101=Alt+F1,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item
@@ -280,7 +281,7 @@ _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
 mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
-playpausemedia=Pause\tMedia Play,Media Play,Play/Pause media playback
+playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
@@ -325,6 +326,7 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
+activate widget 2=,none,Activate Application Launcher Widget
 clear-history=none,none,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,none,Next History Item

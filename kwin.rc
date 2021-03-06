@@ -1,5 +1,5 @@
 [$Version]
-update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage
 
 [Compositing]
 GLCore=true
@@ -24,6 +24,7 @@ Duration=620
 Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 
 [Plugins]
+desktopchangeosdEnabled=false
 force-decorations-gtk3Enabled=true
 forceblurEnabled=true
 highlightwindowEnabled=true
@@ -51,7 +52,7 @@ screenGapBottom=7
 screenGapLeft=7
 screenGapRight=7
 screenGapTop=7
-tileLayoutGap=12
+tileLayoutGap=16
 
 [TabBox]
 LayoutName=thumbnail_grid

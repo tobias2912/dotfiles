@@ -1,5 +1,6 @@
 {
-    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+    "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.minimap.enabled": false,
     "files.autoSave": "afterDelay",
     "workbench.iconTheme": "vscode-icons",
@@ -10,10 +11,10 @@
     "explorer.confirmDelete": false,
     "window.zoomLevel": 1,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#004b56",
-        "statusBar.noFolderBackground": "#004b56",
+        "statusBar.background": "#5f0000",
+        "statusBar.noFolderBackground": "#5f0000",
         "statusBar.decibuggingBackground": "#5f0000",
-        "statusBar.debuggingBackground": "#004b56",
+        "statusBar.debuggingBackground": "#5f0000",
         "activityBarBadge.background": "#80CBC4",
         "activityBar.activeBorder": "#80CBC4",
         "list.activeSelectionForeground": "#80CBC4",
@@ -54,7 +55,7 @@
     "python.autoComplete.extraPaths": ["./path-to-your-code"],
     "python.jediEnabled": true,
 
-    "vim.foldfix":true
+    "vim.foldfix":true,
     "vim.easymotion": true,
     "vim.statusBarColors.normal": "#004b56",
     "vim.statusBarColorControl": true,
