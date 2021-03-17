@@ -18,7 +18,9 @@ BlurStrength=11
 NoiseStrength=2
 
 [Effect-Slide]
-Duration=620
+Duration=790
+HorizontalGap=0
+VerticalGap=0
 
 [ModifierOnlyShortcuts]
 Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
@@ -26,7 +28,7 @@ Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 [Plugins]
 desktopchangeosdEnabled=false
 force-decorations-gtk3Enabled=true
-forceblurEnabled=true
+forceblurEnabled=false
 highlightwindowEnabled=true
 krohnkiteEnabled=true
 kwin4_effect_squashEnabled=false
@@ -55,10 +57,12 @@ screenGapTop=7
 tileLayoutGap=16
 
 [TabBox]
-LayoutName=thumbnail_grid
+LayoutName=compact
+MinimizedMode=2
 
 [TabBoxAlternative]
 LayoutName=compact
+MinimizedMode=1
 
 [org.kde.kdecoration2]
 BorderSizeAuto=false

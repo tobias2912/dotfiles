@@ -3,18 +3,79 @@
     "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.minimap.enabled": false,
     "files.autoSave": "afterDelay",
-    "workbench.iconTheme": "vscode-icons",
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": true,
     "window.menuBarVisibility": "toggle",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "window.zoomLevel": 1,
+    "glassit.alpha": 255,
+    "breadcrumbs.enabled": false,
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.enabled": true,
+    "explorer.openEditors.visible": 1,
+    "workbench.editor.showTabs": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Jedi",
+    "extensions.ignoreRecommendations": false,
+    "python.dataScience.sendSelectionToInteractiveWindow": false,
+    "python.autoComplete.extraPaths": ["./path-to-your-code"],
+    "python.jediEnabled": true,
+    
+    //Vim settings
+    "keyboard.dispatch": "keyCode",
+    "vim.foldfix":true,
+    "vim.easymotion": true,
+    "vim.statusBarColors.normal": "#004b56",
+    "vim.statusBarColorControl": true,
+    "vim.highlightedyank.enable": true,
+    "vim.statusBarColors.visualline": "005400",
+    "vim.easymotionMarkerBackgroundColor": "#bbbbff",
+    "vim.easymotionDimBackground": false,
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-b>": false,
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-w>", "q"],
+            "commands": ["workbench.action.closeGroup"]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "after": ["\"", "_", "d"]
+        },
+        {
+            "before": ["Y"],
+            "after": ["y", "$"]
+        },
+        {
+            "before": ["<leader>", "r"],
+            "commands": ["editor.action.rename"] 
+        }
+    ],
+    //themes
+    "workbench.iconTheme": "vscode-icons",
+    "materialTheme.accent": "Teal",
+    "gruvboxMaterial.darkContrast": "hard",
+    "gruvboxMaterial.darkPalette": "original",
+    "gruvboxMaterial.darkWorkbench": "high-contrast",
+    
     "workbench.colorCustomizations": {
-        "statusBar.background": "#5f0000",
-        "statusBar.noFolderBackground": "#5f0000",
+        "statusBar.background": "#004b56",
+        "statusBar.noFolderBackground": "#004b56",
         "statusBar.decibuggingBackground": "#5f0000",
-        "statusBar.debuggingBackground": "#5f0000",
+        "statusBar.debuggingBackground": "#004b56",
         "activityBarBadge.background": "#80CBC4",
         "activityBar.activeBorder": "#80CBC4",
         "list.activeSelectionForeground": "#80CBC4",
@@ -39,56 +100,6 @@
         "selection.background": "#80CBC440",
         "statusBarItem.remoteBackground": "#80CBC4"
     },
-    "glassit.alpha": 230,
-    "breadcrumbs.enabled": false,
-    "workbench.colorTheme": "Gruvbox Material Dark",
-    "python.pythonPath": "/usr/bin/python3",
-    "keyboard.dispatch": "keyCode",
-    "python.linting.enabled": true,
-    "explorer.openEditors.visible": 1,
-    "workbench.editor.showTabs": false,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "python.languageServer": "Jedi",
-    "extensions.ignoreRecommendations": false,
-    "python.dataScience.sendSelectionToInteractiveWindow": false,
-    "python.autoComplete.extraPaths": ["./path-to-your-code"],
-    "python.jediEnabled": true,
-
-    "vim.foldfix":true,
-    "vim.easymotion": true,
-    "vim.statusBarColors.normal": "#004b56",
-    "vim.statusBarColorControl": true,
-    "vim.highlightedyank.enable": true,
-    "vim.statusBarColors.visualline": "005400",
-    "vim.easymotionMarkerBackgroundColor": "#bbbbff",
-    "vim.easymotionDimBackground": false,
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-c>": false,
-        "<C-v>": false,
-        "<C-b>": false,
-    },
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "after": ["\"", "_", "d"],
-            "before": ["<leader>", "d"]
-        },
-        {
-            "after": ["y", "$"],
-            "before": ["Y"]
-        }
-    ],
-    "materialTheme.accent": "Teal",
-    "gruvboxMaterial.darkContrast": "hard",
-    "gruvboxMaterial.darkPalette": "original",
-    "gruvboxMaterial.darkWorkbench": "high-contrast",
     "gitlens.advanced.messages": {
         "suppressFileNotUnderSourceControlWarning": true
     },

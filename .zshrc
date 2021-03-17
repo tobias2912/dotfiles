@@ -154,3 +154,8 @@ fe() {
 }
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
+
+# java
+export JAVA_HOME=/usr/local/java/jdk1.8.0_281
+export PATH=/usr/local/java/jdk1.8.0_281:$PATH
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
