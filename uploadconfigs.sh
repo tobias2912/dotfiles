@@ -10,6 +10,3 @@ cp ~/.config/kglobalshortcutsrc ./
 
 cp "${HOME}/.config/Code - OSS/User/keybindings.json" ./vscode/keybindings.json
 cp "${HOME}/.config/Code - OSS/User/settings.json" ./vscode/settings.json
-
-git add .
-git commit -m 'configs updated by script' && git push

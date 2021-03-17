@@ -1,8 +1,8 @@
 
 #!/usr/bin/env bash
 #create some dirs that are not created automatically
-mkdir -p ~/.config/kitty/kitty.conf 
-mkdir -p ~/.config/ranger/rc.conf 
+#mkdir -p ~/.config/kitty/kitty.conf 
+#mkdir -p ~/.config/ranger/rc.conf 
 #copy fromt this dir to default config locations
 cp ./kitty.conf ~/.config/kitty/kitty.conf 
 cp ./rc.conf ~/.config/ranger/rc.conf 
