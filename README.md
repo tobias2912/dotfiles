@@ -79,6 +79,9 @@ requires vscode vim plugin
 
 follow https://github.com/alexanderjeurissen/ranger_devicons for ranger icons
 
+## caps lock rebind
+
+https://gist.github.com/tanyuan/55bca522bf50363ae4573d4bdcf06e2e
 
 # clone configs
 
