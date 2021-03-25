@@ -83,6 +83,8 @@ follow https://github.com/alexanderjeurissen/ranger_devicons for ranger icons
 
 https://gist.github.com/tanyuan/55bca522bf50363ae4573d4bdcf06e2e
 
+setxkbmap -option 'caps:ctrl_modifier' xcape -e 'Caps_Lock=Escape' setxkbmap -option 'caps:ctrl_modifier' xcape -e 'Caps_Lock=Escape;Control_L=Escape;Control_R=Escape'
+
 # clone configs
 
 clone this repo and use script to move configs to default config locations
