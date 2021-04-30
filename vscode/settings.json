@@ -8,7 +8,6 @@
     "window.menuBarVisibility": "toggle",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 1,
     "glassit.alpha": 255,
     "breadcrumbs.enabled": false,
     "workbench.colorTheme": "Gruvbox Material Dark",
@@ -68,7 +67,7 @@
     "workbench.iconTheme": "vscode-icons",
     "materialTheme.accent": "Teal",
     "gruvboxMaterial.darkContrast": "hard",
-    "gruvboxMaterial.darkPalette": "original",
+    "gruvboxMaterial.darkPalette": "mix",
     "gruvboxMaterial.darkWorkbench": "high-contrast",
     
     "workbench.colorCustomizations": {
@@ -107,4 +106,16 @@
     "vsicons.dontShowNewVersionMessage": true,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.wordWrap": "off",
+    "gruvboxMaterial.colorfulSyntax": true,
+    "gruvboxMaterial.lightContrast": "hard",
+    "gruvboxMaterial.lightPalette": "original",
+    "gruvboxMaterial.lightWorkbench": "flat",
+    "window.zoomLevel": 1,
+    "redhat.telemetry.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
 }

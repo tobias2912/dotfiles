@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#copy configs from default position and push to github
+#copy configs from default position to this dir
 cp ~/.config/kitty/kitty.conf ./kitty.conf
 cp ~/.config/ranger/rc.conf ./rc.conf
 cp ~/.config/kwinrc ./kwin.rc

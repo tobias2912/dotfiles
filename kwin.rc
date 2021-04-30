@@ -2,15 +2,22 @@
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage
 
 [Compositing]
-GLCore=true
+Backend=XRender
+Enabled=false
+HiddenPreviews=6
+LatencyPolicy=Low
 OpenGLIsUnsafe=false
-WindowsBlockCompositing=false
+XRenderSmoothScale=true
 
 [Desktops]
 Id_1=d762915d-c3a0-49e6-853e-5c82de523950
 Id_2=79478025-f271-443a-965a-bf190a272ca3
-Name_2=New Desktop
-Number=2
+Id_3=cca9f514-c126-401c-9e3a-61f64c4cf172
+Id_4=be95f23b-b8a4-41e2-b926-5050c635b508
+Name_1=div
+Name_2=react native
+Name_3=master
+Number=4
 Rows=1
 
 [Effect-Blur]
@@ -26,12 +33,13 @@ VerticalGap=0
 Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 
 [Plugins]
-desktopchangeosdEnabled=false
+desktopchangeosdEnabled=true
 force-decorations-gtk3Enabled=true
 forceblurEnabled=false
 highlightwindowEnabled=true
 krohnkiteEnabled=true
 kwin4_effect_squashEnabled=false
+kwin4_effect_translucencyEnabled=false
 lattewindowcolorsEnabled=true
 magiclampEnabled=true
 minimizeallEnabled=false
@@ -39,6 +47,10 @@ sheetEnabled=true
 synchronizeskipswitcherEnabled=false
 videowallEnabled=false
 wobblywindowsEnabled=true
+
+[Script-desktopchangeosd]
+PopupHideDelay=700
+TextOnly=true
 
 [Script-forceblur]
 patterns=yakuake\nurxvt\nkeepassxc\ncode-oss\nSpotify\nkitty
@@ -57,7 +69,10 @@ screenGapTop=7
 tileLayoutGap=16
 
 [TabBox]
-LayoutName=compact
+ActivitiesMode=0
+DesktopLayout=org.kde.breeze.desktop
+DesktopListLayout=org.kde.breeze.desktop
+LayoutName=org.kde.breeze.desktop
 MinimizedMode=2
 
 [TabBoxAlternative]
@@ -66,3 +81,5 @@ MinimizedMode=1
 
 [org.kde.kdecoration2]
 BorderSizeAuto=false
+library=org.kde.breeze
+theme=Breeze

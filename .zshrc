@@ -112,7 +112,8 @@ alias py="python3"
 alias l="ls"
 alias ..="cd .."
 alias ...="cd ../.."
-alias ra=ranger
+alias ra="ranger"
+alias startreact="j fjell && npx react-native start & && npx react-native run-android"
 #make ranger exit to current dir when exiting with Q
 function ranger {
     local IFS=$'\t\n'
@@ -137,7 +138,6 @@ function ranger {
 autoload -U compinit && compinit -u
 
 ZSH_TMUX_UNICODE='true'
-
 # fd - cd to selected directory
 fd() {
   local dir
@@ -159,3 +159,6 @@ export VISUAL=/usr/bin/vim
 export JAVA_HOME=/usr/local/java/jdk1.8.0_281
 export PATH=/usr/local/java/jdk1.8.0_281:$PATH
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
