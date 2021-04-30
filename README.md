@@ -29,23 +29,37 @@ https://github.com/tsujan/Kvantum/blob/master/Kvantum/INSTALL.md
 
 ### zsh
 
+```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
 ### zsh plugins 
 
+```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
 
 #### autojump
 
+```
 git clone git://github.com/wting/autojump.git
 cd autojump
 ./install.py
+```
 
 ### set default shell
 
+```
 chsh -s $(which zsh)
+```
 
 ### kitty
 
@@ -82,6 +96,10 @@ follow https://github.com/alexanderjeurissen/ranger_devicons for ranger icons
 ## caps lock rebind
 
 https://gist.github.com/tanyuan/55bca522bf50363ae4573d4bdcf06e2e
+
+```
+setxkbmap -option 'caps:ctrl_modifier' xcape -e 'Caps_Lock=Escape' setxkbmap -option 'caps:ctrl_modifier' xcape -e 'Caps_Lock=Escape;Control_L=Escape;Control_R=Escape'
+```
 
 # clone configs
 
