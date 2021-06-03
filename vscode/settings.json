@@ -1,11 +1,9 @@
 {
     "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
     "editor.fontFamily": "'FiraCode Nerd Font', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 14,
     "editor.minimap.enabled": false,
     "files.autoSave": "afterDelay",
-    "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": true,
-    "window.menuBarVisibility": "toggle",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "glassit.alpha": 255,
@@ -112,10 +110,13 @@
     "gruvboxMaterial.lightContrast": "hard",
     "gruvboxMaterial.lightPalette": "original",
     "gruvboxMaterial.lightWorkbench": "flat",
-    "window.zoomLevel": 1,
     "redhat.telemetry.enabled": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "window.zoomLevel": 1,
+    "workbench.sideBar.location": "right",
+    "window.menuBarVisibility": "compact",
+    "workbench.activityBar.visible": false,
 }
