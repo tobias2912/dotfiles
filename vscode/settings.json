@@ -119,4 +119,8 @@
     "workbench.sideBar.location": "right",
     "window.menuBarVisibility": "compact",
     "workbench.activityBar.visible": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitlens.hovers.currentLine.enabled": false,
 }

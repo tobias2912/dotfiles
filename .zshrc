@@ -162,3 +162,5 @@ export ANDROID_SDK_ROOT=$HOME/Android/Sdk
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+#git diff
+alias gd="git difftool --no-symlinks --dir-diff"
