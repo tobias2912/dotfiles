@@ -1,7 +1,5 @@
 # setup for Manjaro/KDE
 
-![screenshot](screen)
-
 ## KDE
 
 
@@ -109,3 +107,6 @@ clone this repo and use script to move configs to default config locations
 git clone https://github.com/tobias2912/dotfiles
 cd dotfiles && chmod +x insertconfigs.sh && ./insertconfigs.sh
 ```
+
+
+![screenshot](screen)
