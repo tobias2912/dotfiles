@@ -101,19 +101,17 @@ export LANG=en_US.UTF-8
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshc="vim ~/.zshrc"
-alias ohmyzshc="vim ~/.oh-my-zsh"
-alias kittyc="vim ~/.config/kitty/kitty.conf"
+alias zshc="nvim ~/.zshrc"
+alias ohmyzshc="nvim ~/.oh-my-zsh"
+alias kittyc="nvim ~/.config/kitty/kitty.conf"
 alias vimc="vim ~/.vimrc"
-alias rac="vim ~/.config/ranger/rc.conf"
+alias rac="nvim ~/.config/ranger/rc.conf"
 alias py="python3"
 alias l="ls"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ra="ranger"
-alias startreact="j fjell && npx react-native start & && npx react-native run-android"
+alias o="xdg-open"
 #make ranger exit to current dir when exiting with Q
 function ranger {
     local IFS=$'\t\n'
@@ -150,10 +148,10 @@ fd() {
 #   - Exit if there's no match (--exit-0)
 fe() {
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
+  [[ -n "$files" ]] && ${EDITOR:-nvim} "${files[@]}"
 }
-export EDITOR=/usr/bin/vim
-export VISUAL=/usr/bin/vim
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 
 # java
 export JAVA_HOME=/usr/local/java/jdk1.8.0_281
@@ -164,3 +162,5 @@ source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 #git diff
 alias gd="git difftool --no-symlinks --dir-diff"
+#node for nvim
+export PATH="$HOME/tools/node-v14.15.4-linux-x64/bin:$PATH"
