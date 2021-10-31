@@ -10,13 +10,12 @@ XRenderSmoothScale=true
 
 [Desktops]
 Id_1=d762915d-c3a0-49e6-853e-5c82de523950
-Id_2=79478025-f271-443a-965a-bf190a272ca3
-Id_3=cca9f514-c126-401c-9e3a-61f64c4cf172
-Id_4=be95f23b-b8a4-41e2-b926-5050c635b508
+Id_2=cca9f514-c126-401c-9e3a-61f64c4cf172
+Id_3=be95f23b-b8a4-41e2-b926-5050c635b508
 Name_1=div
-Name_2=react native
-Name_3=master
-Number=4
+Name_2=master
+Name_3=113
+Number=3
 Rows=1
 
 [Effect-Blur]
@@ -32,11 +31,11 @@ VerticalGap=0
 Meta=org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu
 
 [Plugins]
-desktopchangeosdEnabled=true
-force-decorations-gtk3Enabled=true
+bismuthEnabled=true
+force-decorations-gtk3Enabled=false
 forceblurEnabled=false
 highlightwindowEnabled=true
-krohnkiteEnabled=true
+krohnkiteEnabled=false
 kwin4_effect_squashEnabled=false
 kwin4_effect_translucencyEnabled=false
 lattewindowcolorsEnabled=true
@@ -47,9 +46,18 @@ synchronizeskipswitcherEnabled=false
 videowallEnabled=false
 wobblywindowsEnabled=true
 
+[Script-bismuth]
+enableSpiralLayout=false
+enableSpreadLayout=false
+enableStairLayout=false
+screenGapBottom=9
+screenGapLeft=9
+screenGapRight=9
+screenGapTop=9
+tileLayoutGap=9
+
 [Script-desktopchangeosd]
 PopupHideDelay=700
-TextOnly=true
 
 [Script-forceblur]
 patterns=yakuake\nurxvt\nkeepassxc\ncode-oss\nSpotify\nkitty
@@ -60,11 +68,11 @@ directionalKeyFocus=true
 enableSpreadLayout=false
 enableStairLayout=false
 limitTileWidth=true
-monocleMaximize=false
-screenGapBottom=7
-screenGapLeft=7
-screenGapRight=7
-screenGapTop=7
+limitTileWidthRatio=1.5
+screenGapBottom=10
+screenGapLeft=10
+screenGapRight=10
+screenGapTop=10
 tileLayoutGap=16
 
 [TabBox]
@@ -78,7 +86,9 @@ MinimizedMode=2
 LayoutName=compact
 MinimizedMode=1
 
+[Windows]
+FocusStealingPreventionLevel=2
+
 [org.kde.kdecoration2]
+BorderSize=Tiny
 BorderSizeAuto=false
-library=org.kde.breeze
-theme=Breeze
