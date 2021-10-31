@@ -2,7 +2,7 @@
 [
     {
         "key": "alt+j",
-        "command": "editor.action.moveLinesDownAction",
+        "command": "search",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -22,8 +22,9 @@
     },
     // Toggle between terminal and editor focus
     {
-        "key": "ctrl+q",
-        "command": "workbench.action.terminal.focus"
+        "key": "ctrl+j",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+q",
@@ -133,5 +134,13 @@
         "key": "shift+n",
         "command": "fileutils.newFolder",
         "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.findInFiles"
     }
 ]// Place your key bindings in this file to override the defaultsauto[]
