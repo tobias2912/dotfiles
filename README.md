@@ -6,7 +6,7 @@
 ### install programs
 
 ```
-sudo pacman -Syu zsh kitty ranger latte-dock code vim discord binutils fzf
+sudo pacman -Syu zsh kitty ranger latte-dock code vim discord binutils fzf xclip
 ```
 
 ### remove titlebar
